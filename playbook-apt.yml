@@ -6,5 +6,5 @@
   - name: "apt module -install a simple application"
     apt: #module
       name: figlet # module parameter
-      state: absent # module parameter
+      state: present # module parameter
     become: true #keyword for tasks -- tells ansible how to run this task
