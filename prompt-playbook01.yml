@@ -6,11 +6,10 @@
   vars_prompt:
     - name: "yourpassword"
       prompt: "what is your password"
-      private: yes
-        #encrypt: "sha512_crypt"
+      encrypt: "sha512_crypt"
       confirm: yes
       salt_size: 7
-        #  default: "qwerty"
+      default: "qwerty"
       
   tasks:
     - name: Print out the password
